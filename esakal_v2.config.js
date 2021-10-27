@@ -8,8 +8,11 @@ const configuration = {
     articleLimit: 5,
   },
   secret: "keygen",
-  defaultImageUrl:
-    "https://images.news18.com/static_news18/pix/ibnhome/news18/images/default-300x200.jpg?impolicy=website&width=150&height=100",
+  fallBackImageUrl:
+    "https://fea.assettype.com/esakal/images/SakalPlaceholder.png",
+  customFields: [
+    "MetaDescription",
+  ],
 };
 
 window.wruConfig = configuration;
