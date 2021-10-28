@@ -1,5 +1,6 @@
 const configuration = {
   domain: "https://preprod.wru.ai",
+  merchant: "esakal",
   merchantId: "130927",
   strategy:'content_similarity',
   articleLimit: 10,
