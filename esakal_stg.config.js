@@ -14,6 +14,7 @@ const configuration = {
   customFields: [
     "MetaDescription",
   ],
+  imgDomain: "https://qtstage-01.gumlet.io/",
 };
 
 window.wruConfig = configuration;
