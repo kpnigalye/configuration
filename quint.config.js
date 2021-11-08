@@ -1,6 +1,6 @@
 const configuration = {
   domain: "https://alfred.wru.ai",
-  merchantId: "130918",
+  merchantId: "130915",
   strategy:'qwwidget',
   articleLimit: 4,
   secret: "keygen",
