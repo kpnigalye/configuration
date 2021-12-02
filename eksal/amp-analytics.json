@@ -1,0 +1,74 @@
+{
+  "requests": {
+    "analytics": "https://preprod.wru.ai/130927/user"
+  },
+  "vars": {
+    "uid": "${clientId(wru_user_id)}",
+    "merchantId": "130927",
+    "platform": "mobile"
+  },
+  "linker": {
+    "enabled": true,
+    "destinationDomains": ["esakal.com", "esakal-beta.quintype.io"]
+  },
+  "triggers": {
+    "iniLoad": {
+      "on": "ini-load",
+      "request": "analytics",
+      "vars": {
+        "eventType": "STORY_VIEW_EVENT"
+      },
+      "extraUrlParams": {
+        "cid": "${cid}",
+        "uid": "${uid}",
+        "merchantId": "${merchantId}",
+        "eid": "${pageViewId64}",
+        "timestamp": "${timestamp}",
+        "platform": "${platform}",
+        "eventType": "${eventType}",
+        "ref": "${documentReferrer}"
+      }
+    },
+    "trackPageview": {
+      "on": "visible",
+      "request": "analytics",
+      "selector": ".wru-widget",
+      "vars": {
+        "eventType": "WIDGET_VIEW_EVENT"
+      },
+      "extraUrlParams": {
+        "cid": "${cid}",
+        "uid": "${uid}",
+        "merchantId": "${merchantId}",
+        "eid": "${pageViewId64}__${random}",
+        "timestamp": "${timestamp}",
+        "platform": "${platform}",
+        "eventType": "${eventType}",
+        "userAgent": "${userAgent}"
+      }
+    },
+    "trackAnchorClicks": {
+      "on": "click",
+      "selector": ".wru-recommendation",
+      "request": "analytics",
+      "vars": {
+        "eventType": "RECOMMENDATION_VIEW_EVENT"
+      },
+      "extraUrlParams": {
+        "cid": "${clickedCid}",
+        "parentCid": "${cid}",
+        "uid": "${uid}",
+        "merchantId": "${merchantId}",
+        "eid": "${pageViewId64}__${random}",
+        "timestamp": "${timestamp}",
+        "platform": "${platform}",
+        "eventType": "${eventType}",
+        "ref": "${documentReferrer}"
+      }
+    }
+  },
+  "transport": {
+    "xhrpost": true,
+    "useBody": true
+  }
+}
