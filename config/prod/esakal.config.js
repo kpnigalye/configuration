@@ -1,20 +1,16 @@
 const configuration = {
   domain: "https://api.wru.ai",
   merchant: "esakal",
+  merchantDomain: "esakal.com",
   merchantId: "130927",
-  strategy:'content_similarity',
+  strategy: "content_similarity",
   articleLimit: 10,
-  amp : {
-    strategy:'content_similarity',
-    articleLimit: 5,
-  },
   secret: "keygen",
   fallBackImageUrl:
     "https://fea.assettype.com/esakal/images/SakalPlaceholder.png",
-  customFields: [
-    "MetaDescription",
-  ],
+  customFields: ["MetaDescription"],
   imgDomain: "https://gumlet.assettype.com/",
 };
 
 window.wruConfig = configuration;
+
