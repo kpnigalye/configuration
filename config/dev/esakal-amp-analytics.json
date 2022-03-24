@@ -1,0 +1,116 @@
+{
+  "requests": {
+    "analytics": "https://api.wru.ai/130927/user",
+    "event": "https://plausible.io/api/event"
+  },
+  "vars": {
+    "uid": "${clientId(wru_user_id)}",
+    "merchantId": "130927",
+    "platform": "mobile",
+    "strategy": "content_similarity"
+  },
+  "linkers": {
+    "enabled": true,
+    "destinationDomains": ["esakal.com", "www-esakal-com.cdn.ampproject.org"]
+  },
+  "triggers": {
+    "iniLoad": {
+      "on": "visible",
+      "request": "analytics",
+      "extraUrlParams": {
+        "cid": "${cid}",
+        "uid": "${uid}",
+        "merchantId": "${merchantId}",
+        "eid": "${pageViewId64}",
+        "timestamp": "${timestamp}",
+        "platform": "${platform}",
+        "eventType": "STORY_VIEW_EVENT",
+        "ref": "${documentReferrer}"
+      }
+    },
+    "trackPageview": {
+      "on": "visible",
+      "request": "analytics",
+      "selector": ".wru-widget",
+      "extraUrlParams": {
+        "cid": "${cid}",
+        "uid": "${uid}",
+        "merchantId": "${merchantId}",
+        "eid": "${pageViewId64}__${random}",
+        "timestamp": "${timestamp}",
+        "platform": "${platform}",
+        "eventType": "WIDGET_VIEW_EVENT",
+        "userAgent": "${userAgent}"
+      }
+    },
+    "trackAnchorClicks": {
+      "on": "click",
+      "selector": ".wru-recommendation",
+      "request": "analytics",
+      "extraUrlParams": {
+        "cid": "${clickedCid}",
+        "parentCid": "${cid}",
+        "uid": "${uid}",
+        "merchantId": "${merchantId}",
+        "eid": "${pageViewId64}__${random}",
+        "timestamp": "${timestamp}",
+        "platform": "${platform}",
+        "eventType": "RECOMMENDATION_VIEW_EVENT",
+        "strategy": "${strategy}",
+        "position":"${position}",
+        "model":"${model}"
+      }
+    },
+    "trackPlausiblePageview": {
+      "on": "visible",
+      "request": "event",
+      "extraUrlParams": {
+        "n": "pageview",
+        "u": "${sourceUrl}",
+        "r": "${documentReferrer}",
+        "w": "${viewportWidth}",
+        "d": "esakal.com"
+      }
+    },
+    "trackPlausibleStoryView": {
+      "on": "visible",
+      "request": "event",
+      "extraUrlParams": {
+        "n": "STORY_VIEW_EVENT",
+        "u": "${sourceUrl}",
+        "r": "${documentReferrer}",
+        "w": "${viewportWidth}",
+        "d": "esakal.com"
+      }
+    },
+    "trackPlausibleWidgetView": {
+      "on": "visible",
+      "request": "event",
+      "selector": ".wru-widget",
+      "extraUrlParams": {
+        "n": "WIDGET_VIEW_EVENT",
+        "u": "${sourceUrl}",
+        "r": "${documentReferrer}",
+        "w": "${viewportWidth}",
+        "d": "esakal.com"
+      }
+    },
+    "trackPlausibleRecommendationClick": {
+      "on": "click",
+      "selector": ".wru-recommendation",
+      "request": "event",
+      "extraUrlParams": {
+        "n": "RECOMMENDATION_VIEW_EVENT",
+        "u": "${sourceUrl}",
+        "r": "${documentReferrer}",
+        "w": "${viewportWidth}",
+        "d": "esakal.com",
+        "p": "{\"cid\":\"${clickedCid}\",\"parentCid\":\"${cid}\"}"
+      }
+    }
+  },
+  "transport": {
+    "xhrpost": true,
+    "useBody": true
+  }
+}
