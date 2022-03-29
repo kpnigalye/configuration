@@ -1,20 +1,18 @@
 const configuration = {
   domain: "https://alfred.wru.ai",
-  merchant: "quint",
+  merchant: "thequint",
   merchantId: "130915",
+  merchantDomain: "testing-quint-widget.glitch.me",
   strategy: "qwwidget",
-  articleLimit: 4,
+  articleLimit: 12,
   multipleWidgets: true,
-  abTesting: {
-    enabled: false,
-    wruWidget: 0.8,
-    clientWidget: 0.2,
-  },
   secret: "keygen",
   fallBackImageUrl:
-    "https://images.news18.com/static_news18/pix/ibnhome/news18/images/default-300x200.jpg?impolicy=website&width=150&height=100",
-  customFields: [],
+    "https://images.thequint.com/thequint/2021-06/b02e0cf0-8e1f-46e7-b75f-eac28f2dae78/quint_hero_light.svg",
   imgDomain: "https://images.thequint.com/",
+  excludeArticlePublishDate: true,
+  stylesheet: "https://cdn.jsdelivr.net/gh/kpnigalye/configuration/css/quint-wru-widget.css",
+  disableWruAnalytics: true,
 };
 
 window.wruConfig = configuration;
