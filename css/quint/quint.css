@@ -76,8 +76,12 @@
     --regular: 400;
     --bold: 700;
     --bolder: 800;
-    --primary-color: #35144f;
-    --secondary-color: #292929;
+    --primary-color-quint: #35144f;
+    --secondary-color-quint: #292929;
+    --primary-color-hindiquint: #35144f;
+    --secondary-color-hindiquint: #292929;
+    --primary-color-fitquint: #35144f;
+    --secondary-color-fitquint: #292929;
     --silver: #bababa;
     --space1: 1rem;
     --space2: 2rem;
