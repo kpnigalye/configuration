@@ -10,5 +10,6 @@
   ],
   "secret": "keygen",
   "fallBackImageUrl": "https://images.thequint.com/thequint/2021-06/b02e0cf0-8e1f-46e7-b75f-eac28f2dae78/quint_hero_light.svg",
-  "imgDomain": "https://images.thequint.com/"
+  "imgDomain": "https://images.thequint.com/",
+  "multipleWidgets": true
 }
