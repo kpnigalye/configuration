@@ -1,0 +1,15 @@
+{
+  "domain": "https://api.wru.ai",
+  "widgetPrefix": "wru-recommendations-widget-",
+  "contentType": "application/json",
+  "merchantId": "130915",
+  "strategies": [
+    { "section": "alsoread", "name": "qampalsoread", "articleLimit": 5 },
+    { "section": "editorspick", "name": "qampeditors", "articleLimit": 5 },
+    { "section": "mustwatch", "name": "qampmustwatch", "articleLimit": 5 }
+  ],
+  "articleLimit": 10,
+  "secret": "keygen",
+  "fallBackImageUrl": "https://fea.assettype.com/esakal/images/SakalPlaceholder.png",
+  "imgDomain": "https://gumlet.assettype.com/"
+}
