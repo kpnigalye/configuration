@@ -11,5 +11,6 @@
   "articleLimit": 10,
   "secret": "keygen",
   "fallBackImageUrl": "https://fea.assettype.com/esakal/images/SakalPlaceholder.png",
-  "imgDomain": "https://gumlet.assettype.com/"
+  "imgDomain": "https://gumlet.assettype.com/",
+  multipleWidgets: true
 }
