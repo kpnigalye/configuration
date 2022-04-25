@@ -4,9 +4,9 @@
   "contentType": "application/json",
   "merchantId": "130915",
   "strategies": [
-    { "section": "also_read", "name": "qampalsoread", "articleLimit": 5 },
-    { "section": "editors_pick", "name": "qampeditors", "articleLimit": 5 },
-    { "section": "must_watch", "name": "qampmustwatch", "articleLimit": 5 }
+    { "section": "also-read", "name": "qampalsoread", "articleLimit": 5 },
+    { "section": "editors-pick", "name": "qampeditors", "articleLimit": 5 },
+    { "section": "must-watch", "name": "qampmustwatch", "articleLimit": 5 }
   ],
   "articleLimit": 10,
   "secret": "keygen",
