@@ -5,10 +5,9 @@
   "merchantId": "130915",
   "strategies": [
     { "section": "also-read", "name": "qampalsoread", "articleLimit": 5 },
-    { "section": "editors-pick", "name": "qampeditors", "articleLimit": 5 },
-    { "section": "must-watch", "name": "qampmustwatch", "articleLimit": 5 }
+    { "section": "must-watch", "name": "qampmustwatch", "articleLimit": 5 },
+    { "section": "editors-pick", "name": "qampeditors", "articleLimit": 5 }
   ],
-  "articleLimit": 10,
   "secret": "keygen",
   "fallBackImageUrl": "https://fea.assettype.com/esakal/images/SakalPlaceholder.png",
   "imgDomain": "https://gumlet.assettype.com/",
