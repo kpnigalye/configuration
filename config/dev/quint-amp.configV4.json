@@ -1,5 +1,5 @@
 {
-  "domain": "https://preprod.wru.ai",
+  "domain": "https://alfred.wru.ai",
   "widgetPrefix": "wru-recommendations-widget-",
   "contentType": "application/json",
   "merchantId": "130915",
