@@ -9,7 +9,7 @@
     { "section": "editors-pick", "name": "qampeditors", "articleLimit": 5 }
   ],
   "secret": "keygen",
-  "fallBackImageUrl": "https://fea.assettype.com/esakal/images/SakalPlaceholder.png",
-  "imgDomain": "https://gumlet.assettype.com/",
+  "fallBackImageUrl": "https://images.thequint.com/thequint/2021-06/b02e0cf0-8e1f-46e7-b75f-eac28f2dae78/quint_hero_light.svg",
+  "imgDomain": "https://images.thequint.com/",
   "multipleWidgets": true
 }
