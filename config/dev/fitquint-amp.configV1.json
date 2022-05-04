@@ -1,0 +1,15 @@
+{
+  "domain": "https://preprod.wru.ai",
+  "widgetPrefix": "wru-recommendations-widget-",
+  "contentType": "application/json",
+  "merchantId": "130917",
+  "strategies": [
+    { "section": "also-read", "name": "qampalsoread", "articleLimit": 5 },
+    { "section": "must-watch", "name": "qampmustwatch", "articleLimit": 5 },
+    { "section": "editors-pick", "name": "qampeditors", "articleLimit": 5 }
+  ],
+  "secret": "keygen",
+  "fallBackImageUrl": "https://images.thequint.com/thequint/2021-06/b02e0cf0-8e1f-46e7-b75f-eac28f2dae78/quint_hero_light.svg",
+  "imgDomain": "https://images.thequint.com/",
+  "multipleWidgets": true
+}
