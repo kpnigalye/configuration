@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwru_widget_react=self.webpackChunkwru_widget_react||[]).push([[385],{385:function(e,t,r){r.r(t);var u=r(294);t.default=function(){return u.createElement("hr",{className:"footer-line"})}}}]);
