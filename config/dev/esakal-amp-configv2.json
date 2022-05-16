@@ -1,0 +1,17 @@
+{
+  "domain": "https://preprod.wru.ai",
+  "widgetPrefix": "wru-recommendations-widget-",
+  "contentType": "application/json",
+  "merchant": "esakal",
+  "merchantId": "130927",
+  "strategies": [
+    {
+      "section": "values",
+      "name": "content_similarity",
+      "articleLimit": 10
+    }
+  ],
+  "secret": "keygen",
+  "fallBackImageUrl": "https://fea.assettype.com/esakal/images/SakalPlaceholder.png",
+  "imgDomain": "https://gumlet.assettype.com/"
+}
